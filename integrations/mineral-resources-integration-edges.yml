@@ -1,0 +1,19 @@
+generated: '2026-10-22'
+method: none
+source:
+- https://zapier.com/apps/mineral-resources/integrations
+- https://n8n.io/integrations/mineral-resources/
+- https://composio.dev/toolkits/mineral-resources
+- https://monid.ai/tools/mineral-resources
+checked:
+- https://zapier.com/apps/mineral-resources/integrations
+- https://n8n.io/integrations/mineral-resources/
+- https://www.mineralresources.com.au/
+- https://composio.dev/toolkits/mineral-resources
+- https://monid.ai/tools/mineral-resources
+summary: No integration edges found. Mineral Resources is a mining and mining-services company with no public API,
+  app listing or integrations/partners page; it has no marketplace listing on Zapier or n8n (both 404) and no contract
+  in this repo to name partner services.
+marketplace_apps: []
+edges: []
+templates: []

@@ -1,0 +1,22 @@
+name: Mineral Resources MCP Server
+type: MCPServer
+generated: '2026-10-22'
+method: none
+status: none
+description: >-
+  Checked, nothing there. Mineral Resources Limited (MinRes) publishes no MCP server, no OpenAPI
+  and no public API, so no candidate tool list can be derived. Probes 2026-10-22:
+  https://www.mineralresources.com.au/.well-known/mcp.json -> 404; https://www.mineralresources.com.au/llms.txt -> 200
+  (company overview, no API or MCP mention). Pre-flight contract discovery (2026-10-21) on mineralresources.com.au,
+  www. and careers. found openapi/asyncapi/graphql/mcp all absent. A web search for a MinRes MCP server or developer
+  API returned only unrelated third-party mineral-data servers.
+evidence:
+- url: https://www.mineralresources.com.au/.well-known/mcp.json
+  status: 404
+- url: https://www.mineralresources.com.au/llms.txt
+  status: 200
+tools: []
+deployment:
+  mode: none
+  auth: unknown
+  verified: searched

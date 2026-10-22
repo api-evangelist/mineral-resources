@@ -1,0 +1,78 @@
+generated: '2026-10-22'
+method: searched
+probe: true
+source: https://www.mineralresources.com.au/privacy-policy/
+documents:
+- name: Privacy policy (web summary)
+  url: https://www.mineralresources.com.au/privacy-policy/
+  http_status: 200
+  fetched: '2026-10-22'
+- name: Privacy Policy (full, PDF, linked as "Read our full Privacy Policy ... Download"; signed 21 June 2022)
+  url: https://cdn.sanity.io/files/o6ep64o3/production/ac0d421a73b6b19a38ea44c5e2e60b6bd28ee31e.pdf
+  http_status: 200
+  fetched: '2026-10-22'
+  note: Hosted on the Sanity CDN that serves the company's own site content and linked from its own privacy-policy page.
+governing_law: Privacy Act 1988 (Cth), Australia
+signals:
+  data_subject_request:
+    url: https://cdn.sanity.io/files/o6ep64o3/production/ac0d421a73b6b19a38ea44c5e2e60b6bd28ee31e.pdf
+    section: ACCESS TO PERSONAL INFORMATION; CORRECTION OF PERSONAL INFORMATION
+    rights_named: [access, correction]
+    escalation: Office of the Australian Information Commissioner (OAIC)
+    evidence:
+    - source: https://cdn.sanity.io/files/o6ep64o3/production/ac0d421a73b6b19a38ea44c5e2e60b6bd28ee31e.pdf
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        Subject to any exceptions in the Privacy Act, if you have provided us with personal information, you
+        have a right to request access to it.
+    - source: https://cdn.sanity.io/files/o6ep64o3/production/ac0d421a73b6b19a38ea44c5e2e60b6bd28ee31e.pdf
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        If we refuse to correct your personal information, we will give you a written notice setting out our
+        reasons for the refusal and the mechanisms available to complain about the refusal.
+    note: >-
+      Access and correction rights under the Australian Privacy Act, requested via the policy's contact
+      details, with identity verification and no charge for making an access request. No deletion or
+      portability right is named. Complaints are to be resolved within 30 days, with escalation to the OAIC.
+  data_residency:
+    url: https://cdn.sanity.io/files/o6ep64o3/production/ac0d421a73b6b19a38ea44c5e2e60b6bd28ee31e.pdf
+    section: CROSS-BORDER DISCLOSURE OF PERSONAL INFORMATION
+    evidence:
+    - source: https://cdn.sanity.io/files/o6ep64o3/production/ac0d421a73b6b19a38ea44c5e2e60b6bd28ee31e.pdf
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        Mineral Resources is based in Australia, so your personal information will be processed in Australia.
+        However, we may send your personal information to organisations or persons located overseas.
+    - source: https://cdn.sanity.io/files/o6ep64o3/production/ac0d421a73b6b19a38ea44c5e2e60b6bd28ee31e.pdf
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        For example, indirect overseas disclosure of your personal information to third parties overseas may
+        occur as we use various third party service and storage entities located overseas.
+    note: >-
+      Data is processed in Australia, but the company says it may be sent overseas, including to third-party
+      service and storage providers outside Australia. Transfers are allowed only to recipients bound by
+      substantially similar law or with the individual's consent. No residency commitment is made, and no
+      countries or subprocessors are named.
+  data_retention:
+    url: https://cdn.sanity.io/files/o6ep64o3/production/ac0d421a73b6b19a38ea44c5e2e60b6bd28ee31e.pdf
+    section: SECURITY OF PERSONAL INFORMATION
+    evidence:
+    - source: https://cdn.sanity.io/files/o6ep64o3/production/ac0d421a73b6b19a38ea44c5e2e60b6bd28ee31e.pdf
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        Mineral Resources also takes reasonable steps to destroy or permanently de-identify personal information
+        which is no longer needed for the purposes described in this privacy policy.
+    - source: https://www.mineralresources.com.au/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        We also take reasonable steps to destroy or permanently de-identify personal information that is no
+        longer needed for the purposes described in our Privacy Policy.
+    note: >-
+      Retention is tied to purpose: data is destroyed or de-identified once it is no longer needed. No retention
+      periods or schedule are published.

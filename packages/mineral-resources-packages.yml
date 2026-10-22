@@ -1,0 +1,17 @@
+name: Mineral Resources packages
+generated: '2026-10-22'
+method: none
+note: >-
+  Checked, nothing first-party found. Mineral Resources Limited (MinRes) is a mining company that publishes
+  no API, developer portal or SDK. npm search for "minres" and "mineral-resources" returned only unrelated
+  packages (e.g. @pipeworx/mcp-usgs-mrdata, a USGS mineral-resources data wrapper, not this company);
+  pypi.org/pypi/minres/json and pypi.org/pypi/mineral-resources/json returned 404. The GitHub org "Minres"
+  is MINRES Technologies GmbH (minres.com), a different company; github.com/orgs/mineralresources returned 404.
+checked:
+- https://registry.npmjs.org/-/v1/search?text=minres&size=5
+- https://registry.npmjs.org/-/v1/search?text=mineral-resources&size=5
+- https://pypi.org/pypi/minres/json
+- https://pypi.org/pypi/mineral-resources/json
+- https://api.github.com/orgs/minres
+- https://api.github.com/orgs/mineralresources
+packages: []

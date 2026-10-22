@@ -1,23 +1,96 @@
 aid: mineral-resources
+
 name: Mineral Resources
-description: 'Mineral Resources is a company surfaced via the API Evangelist harvest backlog (source:
-  australia-apidays-2026) and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Mineral Resources Limited (MinRes, ASX: MIN) is an Australian mining services and diversified resources company with operations in iron ore and lithium, spanning mining services (mining and
+  processing, transport and logistics, innovation, manufacturing), engineering and construction, iron ore (Onslow Iron, Pilbara Hub), lithium (Wodgina, Mt Marion, Bald Hill) and energy (exploration, gas
+  production, power). Its website publishes no public API, developer portal or API documentation; this profile records the company''s published web presence.'
+
 url: https://raw.githubusercontent.com/api-evangelist/mineral-resources/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
-modified: '2026-10-21'
+
+modified: '2026-10-22'
+
 tags:
 - Company
-apis: []
+- Mining
+- Mining Services
+- Iron Ore
+- Lithium
+- Energy
+- Australia
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://www.mineralresources.com.au/_next/static/media/open-graph.3jjb6q4v1_7bp.png
+
 common:
+- type: LLMsTxt
+  url: llms/mineral-resources-llms.txt
+- type: Hosts
+  url: hosts/mineral-resources-hosts.yml
+- type: Vendors
+  url: vendors/mineral-resources-vendors.yml
+- type: DomainSecurity
+  url: security/mineral-resources-domain-security.yml
 - type: Website
-  url: https://mineralresources.com.au/
+  url: https://www.mineralresources.com.au/
+- type: About
+  url: https://www.mineralresources.com.au/about-us/who-we-are/
+- type: Leadership
+  url: https://www.mineralresources.com.au/about-us/leadership/
+- type: Newsroom
+  url: https://www.mineralresources.com.au/news/
+- type: Support
+  url: https://www.mineralresources.com.au/get-in-touch/
+- type: Careers
+  url: https://www.mineralresources.com.au/careers/
+- type: Investors
+  url: https://www.mineralresources.com.au/investor-centre/
+- type: Sustainability
+  url: https://www.mineralresources.com.au/sustainability/
+- type: PrivacyPolicy
+  url: https://www.mineralresources.com.au/privacy-policy/
+- type: Disclaimer
+  url: https://www.mineralresources.com.au/disclaimer/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/mineral-resources-limited
+- type: X
+  url: https://twitter.com/mrlminres
+- type: YouTube
+  url: https://www.youtube.com/c/mineralresourceslimited
+
+apis: []
+
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: MinRes is an ASX-listed mining services, iron ore and lithium company; its site, sitemap and llms.txt name no API, developer portal or spec, and /openapi.json returns 404.
+  evidence:
+  - url: https://www.mineralresources.com.au/
+    status: 200
+  - url: https://www.mineralresources.com.au/llms.txt
+    status: 200
+  - url: https://www.mineralresources.com.au/openapi.json
+    status: 404
+  checked: '2026-10-22'
+x-enrichment:
+  date: '2026-10-22'
+  status: enriched
+  artifacts_added: 11
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic
